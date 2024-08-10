@@ -89,5 +89,15 @@ For a CSV file named `example.csv`, the following files will be generated:
 - `output/example_output_plot.png`
 - `output/example_output.svg`
 
+### For Testing 
+  ```bash
+    cd tests
+    python regularize.py
+    ```
 
+### Ignore
+    main3.py
+
+### main2.py
+  More optimized solution for the Occlusion1 
 
