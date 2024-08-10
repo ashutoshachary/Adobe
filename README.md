@@ -30,8 +30,9 @@ This project provides a set of tools to process, analyze, and visualize curves d
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/curve-processing.git
-    cd curve-processing
+    git clone https://github.com/ashutoshachary/Adobe.git
+    cd Adobe
+    cd solution_adobe
     ```
 
 2. Create a virtual environment (optional but recommended):
@@ -52,5 +53,41 @@ This project provides a set of tools to process, analyze, and visualize curves d
 ### Input Data
 
 Input data should be in CSV format. Each CSV file should contain rows of points belonging to different paths. The format should be:
+
+
+Where:
+- `path_id` distinguishes different paths.
+- `curve_id` distinguishes different curves within a path.
+- `x`, `y` are the coordinates of the points.
+
+### Running the Script
+
+1. Place your CSV files in the `examples` directory.
+
+2. Run the script:
+
+    ```bash
+    python main.py
+    ```
+
+3. The script will process each CSV file, generating plots and SVGs in the `output` directory.
+
+### Output
+
+For each input file, the following outputs are generated:
+
+- **Input Plot**: Visual representation of the input paths (e.g., `input_plot.png`).
+- **Output Plot**: Visual representation of the completed and regularized paths (e.g., `output_plot.png`).
+- **Output SVG**: Scalable vector graphic representing the processed paths (e.g., `output.svg`).
+- **Symmetry Detection**: Information about detected symmetries in the paths is printed to the console.
+
+### Example
+
+For a CSV file named `example.csv`, the following files will be generated:
+
+- `output/example_input_plot.png`
+- `output/example_output_plot.png`
+- `output/example_output.svg`
+
 
 
